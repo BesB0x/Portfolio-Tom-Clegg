@@ -1,0 +1,44 @@
+@mixin project-tile($size) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: $size;
+  height: 100%;
+  margin: 5px;
+  .tile{
+    // border: 1px solid rgba(141, 140, 140, 0.792);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      display: block;
+      width: 90%;
+      margin: 5% auto;
+      border-radius: 5px;
+      overflow: hidden;
+      border: 1px solid rgba(141, 140, 140, 0.792);
+    }
+    div{
+      border: 1px solid rgba(141, 140, 140, 0.792);
+      border-radius: 5px;
+      width: 90%;
+      padding-left: 10px;
+    }
+
+  }
+  .tech-container{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    .tech {
+      // border: 1px solid rgba(159, 218, 223, 0.361);
+      border-radius: 5px;
+      padding: 3px;
+      margin: 3px;
+      font-size: 15px;
+      background-color: rgb(198 241 245 / 63%);
+      color: rgb(116 207 216)
+    }
+  }
+}

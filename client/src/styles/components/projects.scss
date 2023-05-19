@@ -1,0 +1,32 @@
+.projects{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .project-display{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    h1 {
+      display: block;
+      height: 110%;
+    }
+    .space-invaders {
+      @include project-tile(30%);
+      align-self: flex-end
+    }
+    .woozu-sounds {
+      @include project-tile(40%)
+    }
+    .atmos {
+      @include project-tile(50%);
+    }
+    .moms-spaghetti{
+      @include project-tile(30%);
+      margin: 5px 8% 5px 3%;
+  
+    }
+  }
+}
