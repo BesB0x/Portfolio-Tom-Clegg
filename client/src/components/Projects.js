@@ -8,7 +8,6 @@ const Projects = () => {
     <main className='projects'>
       <div className='bg'></div>
       <section className='project-display'>
-        <h1> Projects</h1>
         {ProjectData.map(project => {
           return (
             <div key={project.id} className={project.name.replace(' ', '-').replace('\'', '').toLowerCase()}>

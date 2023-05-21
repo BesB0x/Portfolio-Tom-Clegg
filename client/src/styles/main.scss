@@ -1,7 +1,11 @@
 * {
   box-sizing: border-box;
+  font-family: 'Hind Madurai', sans-serif;
 }
 
-
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@500&display=swap');
 @import './mixins.scss';
 @import './components/projects.scss';
+@import './components/about.scss';
+@import './components/skills.scss';
+@import './components/navbar.scss';

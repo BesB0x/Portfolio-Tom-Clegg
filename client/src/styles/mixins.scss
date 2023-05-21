@@ -42,3 +42,13 @@
     }
   }
 }
+
+@mixin about-bg($url) {
+  margin: 0 -12% 0 1px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 500px;
+  animation: brandTransition 25s infinite;
+}

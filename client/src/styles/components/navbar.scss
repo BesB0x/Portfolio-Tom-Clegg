@@ -1,0 +1,21 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .navbar-brand{
+    background-image: url('../../assets/moms-spag.gif');
+    width: 5vw;
+    height: 5vh;
+    margin-left: 10px;
+  }
+  .navbar-collapse{
+    display: flex;
+    align-items: center;
+    .nav-link{
+      padding: 5px;
+      margin: 10px;
+      text-decoration: none;
+    }
+  }
+}

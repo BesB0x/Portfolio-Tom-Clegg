@@ -2,22 +2,7 @@ import { CareerData } from '../data/CareerData'
 
 const Skills = () => {
   return (
-    <main>
-      <div className='career-history'>
-        <h3> Career History</h3>
-        {CareerData.map((job, i) => {
-          return (
-            <div key={i}>
-              <h4> {job.name} - {job.date}</h4>
-              <ul>
-                {job.description.map((point, i) => {
-                  return <li key={i}> {point} </li>
-                })}
-              </ul>
-            </div>
-          )
-        })}
-      </div>
+    <main className='skills-container'>
       <div className='skills'>
         <h3> Skills</h3>
         <div>
@@ -82,6 +67,21 @@ const Skills = () => {
             <li>Customer Service</li>
           </ul>
         </div>
+      </div>
+      <div className='career-history'>
+        <h3> Career History</h3>
+        {CareerData.map((job, i) => {
+          return (
+            <div key={i}>
+              <h4> {job.name} - {job.date}</h4>
+              <ul>
+                {job.description.map((point, i) => {
+                  return <li key={i}> {point} </li>
+                })}
+              </ul>
+            </div>
+          )
+        })}
       </div>
     </main>
   )
