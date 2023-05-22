@@ -5,12 +5,12 @@
   background-image: url('../../assets/navbar.png');
   background-position: center;
   background-size: cover;
-  height: 15%;
+  // height: 15%;
 
   .navbar-brand{
-    // background-image: url('../../assets/logo.png');s
+    background-image: url('../../assets/smile.png');
     width: 9vw;
-    height: 6.5vh;
+    height: 7.5vh;
     margin-left: 10px;
     background-size: contain;
     background-position: center;
@@ -19,10 +19,34 @@
   .navbar-collapse{
     display: flex;
     align-items: center;
-    .nav-link{
-      margin: 10px;
-      text-decoration: none;
-      color: black
+    height: 7.5vh;
+    margin-right: 2%;
+    .navbar-nav{
+      height: 100%;
+      display: flex;
+      .nav-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 60%;
+        margin-left: 1%;
+        background-size: contain;
+        text-decoration: none;
+        color: black;
+      }
+    }
+    .projects-nav{
+      @include bg('../../assets/blob-one.png');
+
+    }
+    .about-nav{
+      @include bg('../../assets/blob-two.png');
+
+    }
+    .skills-nav{
+      @include bg('../../assets/blob-three.png');
+      text-align: center
     }
   }
 }
