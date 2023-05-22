@@ -43,7 +43,7 @@
   }
 }
 
-@mixin about-bg($url) {
+@mixin about-bg {
   margin: 0 -12% 0 1px;
   background-position: center;
   background-size: contain;
@@ -51,4 +51,37 @@
   width: 800px;
   height: 500px;
   animation: brandTransition 25s infinite;
+}
+
+@mixin bg($url) {
+  background-image: url($url);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@mixin landing-buttons($y,$x, $ease, $delay) {
+  opacity: 0;
+  bottom: $y;
+  left: $x;
+  position: absolute;
+  animation: appear $ease ease forwards;
+  animation-delay: $delay;
+}
+
+@mixin title($url) {
+  // opacity: 0.5;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.0)), url($url);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 10px;
+  margin: 15% 0 7% 0 ;
+  width: 80%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  h3{
+    opacity: 1;
+  }
 }

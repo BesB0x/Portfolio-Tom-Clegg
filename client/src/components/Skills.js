@@ -4,8 +4,7 @@ const Skills = () => {
   return (
     <main className='skills-container'>
       <div className='skills'>
-        <h3> Skills</h3>
-        <div>
+        <div className='back-end'>
           <h5> Back-End</h5>
           <ul>
             <li>Python</li>
@@ -14,7 +13,7 @@ const Skills = () => {
             <li>PostgreSQL</li>
             <li>MongoDB</li>
             <li>Mongoose</li>
-            <li>Table Plue</li>
+            <li>Table Plus</li>
             <li>Insomnia</li>
           </ul>
         </div>
@@ -70,18 +69,25 @@ const Skills = () => {
       </div>
       <div className='career-history'>
         <h3> Career History</h3>
-        {CareerData.map((job, i) => {
-          return (
-            <div key={i}>
-              <h4> {job.name} - {job.date}</h4>
-              <ul>
-                {job.description.map((point, i) => {
-                  return <li key={i}> {point} </li>
-                })}
-              </ul>
-            </div>
-          )
-        })}
+        <div className='career-display'>
+          <div className='career-side-bar'> </div>
+          <div>
+            {CareerData.map((job, i) => {
+              return (
+                <div key={i}>
+                  <h4> {job.name} - {job.date}</h4>
+                  <ul>
+                    {job.description.map((point, i) => {
+                      return <li key={i}> {point} </li>
+                    })}
+                  </ul>
+                </div>
+              )
+            })}
+
+          </div>
+
+        </div>
       </div>
     </main>
   )

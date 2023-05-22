@@ -2,12 +2,19 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background-image: url('../../assets/navbar.png');
+  background-position: center;
+  background-size: cover;
+  height: 15%;
 
   .navbar-brand{
-    background-image: url('../../assets/moms-spag.gif');
-    width: 5vw;
-    height: 5vh;
+    // background-image: url('../../assets/logo.png');s
+    width: 9vw;
+    height: 6.5vh;
     margin-left: 10px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .navbar-collapse{
     display: flex;
@@ -17,5 +24,12 @@
       margin: 10px;
       text-decoration: none;
     }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container{
+    background-repeat: no-repeat;
+    font-size: 10px;
   }
 }

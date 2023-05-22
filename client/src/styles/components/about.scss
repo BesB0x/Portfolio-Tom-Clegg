@@ -1,13 +1,21 @@
 .about-container {
-  // background-color: aqua;
   display: flex;
   width: 100vw;
   align-items: center;
   flex-direction: column;
+  .about-title{
+    @include title('../../assets/about-two.png');
+    margin: 5% 0 7% 0 ;
+  }
+  .interests-title{
+    @include title('../../assets/excites-one.png');
+  }
+  .proud-title {
+    @include title('../../assets/proud-three.png');
+  }
   h3 {
-    margin: 60px 0;
+    margin: 0;
     font-size: 30px;
-    background-image: url('../../assets/about-one.png');
   }
   h6{
     font-size: 20px;
@@ -58,12 +66,12 @@
     width: 50%;
   }
   .brand-statement{
-    @include about-bg('../../assets/bs-bg-one.png');
+    @include about-bg;
     animation: brandTransition 25s infinite;
 
   }
   .interests{
-    @include about-bg('../../assets/bs-bg-two.png');
+    @include about-bg;
     animation: interestsTransition 25s infinite;
     margin: 0 0 0 -5%;
   }
@@ -71,7 +79,7 @@
     margin: 0 0 0 5%;
   }
   .proud-of{
-    @include about-bg('../../assets/bs-bg-three.png');
+    @include about-bg;
     animation: proudOfTransition 25s infinite;
   }
 }
@@ -124,18 +132,31 @@
 
 @media only screen and (max-width: 800px) {
   .about-container{
+    .title {
+      h3{
+        font-size: 20px;
+        height: 20px;
+      }
+    }
     .block {
       text-align: center;
       width: 80vw;
       height: 100%;
       flex-wrap: wrap;
-      margin: 0 0 10% 0;
+      margin: 0 3% 10% 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
+      .image{
+        width: 80vw;
+        height: 33vh;
+      }
+      .interests-text{
+        margin: 0;
+      }
       .text {
-        width: 160%;
+        width: 80vw;
       }
       }
   }

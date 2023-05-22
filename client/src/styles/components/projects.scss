@@ -40,3 +40,31 @@
     }
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .projects{
+
+    .project-display{
+      width: 100%;
+      flex-direction: column;
+      .atmos {
+        @include project-tile(80vw);
+      }
+      .space-invaders {
+        @include project-tile(70vw);
+        align-self: flex-end
+      }
+      .moms-spaghetti{
+        @include project-tile(70vw);
+        margin: 5px 8% 5px 3%;
+      }
+      .woozu-sounds {
+        @include project-tile(80vw);
+        align-self: flex-end;
+        .tech{
+          height: 80%;
+        }
+      }
+    }
+  }
+  } 

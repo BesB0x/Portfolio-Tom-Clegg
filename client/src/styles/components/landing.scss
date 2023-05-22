@@ -1,0 +1,101 @@
+.landing-container {
+  margin: 2% 5%;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+
+  .photo {
+    margin-left: 5%;
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    
+    .landing-image {
+      @include bg('../../assets/potential.png');
+      border-radius: 5px;
+      height: 100%;
+      width: 50%;
+      opacity: 0;
+      animation: appear 2s ease forwards;
+      animation-delay: 2s;
+    }
+    p {
+      opacity: 0;
+    }
+    .hi {
+      animation: appear 3s ease forwards;
+      margin-left:1% ;
+    }
+    .welcome{
+      animation: appear 3s ease forwards;
+      animation-delay: 4s ;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .flower {
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 5%;
+
+    .bg {
+      @include bg('../../assets/flower-bg.png');
+      height: 100%;
+      transform: rotateY(180deg);
+      width: 90%;
+      height: 110%;
+      opacity: 0;
+      animation: appear 2s ease forwards;
+      animation-delay: 5.5s ;
+    }
+
+
+    .fg {
+      @include bg('../../assets/flower-fg.png');
+      position: absolute;
+      background-position: bottom;
+      height: 90%;
+      width: 30%;
+      opacity: 0;
+      animation: appear 4.5s ease forwards;
+      animation-delay: 6s;
+    }
+    
+
+    .buttons {
+      position: absolute;
+
+      .about {
+        @include landing-buttons( 375px, -158px, 2s, 7s)
+      }
+
+      .projects {
+        @include landing-buttons( 345px, 67px, 1s, 7s);
+      }
+
+      .skills {
+        @include landing-buttons( 166px, -150px, 1.5s, 7s);
+        width: 90px;
+      }
+      .archive{
+        @include landing-buttons( 213px, 63px, 2.5s, 7s);
+      }
+    }
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0; /* Start with opacity 0 */
+  }
+  100% {
+    opacity: 1; /* End with opacity 1 */
+  }
+}
