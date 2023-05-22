@@ -73,19 +73,25 @@
       position: absolute;
 
       .about {
-        @include landing-buttons( 375px, -158px, 2s, 7s)
+        @include landing-buttons( 363px, -175px, 2s, 7s);
+        height: 65px;
+        width: 65px;
+        @include bg('../../assets/petal.png');
       }
 
       .projects {
-        @include landing-buttons( 345px, 67px, 1s, 7s);
+        @include landing-buttons( 328px, 74px, 1s, 7s);
+        @include bg('../../assets/petal-one.png');
       }
 
       .skills {
         @include landing-buttons( 166px, -150px, 1.5s, 7s);
+        @include bg('../../assets/petal-two.png');
         width: 90px;
       }
       .archive{
-        @include landing-buttons( 213px, 63px, 2.5s, 7s);
+        @include bg('../../assets/petal-three.png');
+        @include landing-buttons( 202px, 80px, 2.5s, 7s);
       }
     }
   }

@@ -6,6 +6,8 @@ import NavBar from '../src/components/NavBar'
 import Experiments from '../src/components/Experiments'
 import Skills from './components/Skills'
 import Landing from '../src/components/Landing'
+import Archive from '../src/components/Archive'
+import Footer from './components/Footer'
 
 const App = () => {
 
@@ -19,8 +21,11 @@ const App = () => {
         <Route path='/projects' element={<Projects />} />
         <Route path='/experiments' element={<Experiments />} />
         <Route path='/skills' element={<Skills />} />
+        <Route path='/archive' element={<Archive />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
+
   )
 }
 

@@ -1,8 +1,9 @@
-.projects{
+.projects-page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  .bg{
+
+  .bg {
     min-height: 1080px;
     width: 100vw;
     background-image: url('../../assets/ten.png');
@@ -11,7 +12,8 @@
     background-size: cover;
     filter: blur(2px);
   }
-  .project-display{
+
+  .project-display {
     position: absolute;
     z-index: 2;
     display: flex;
@@ -19,52 +21,62 @@
     width: 80%;
     margin: 0 auto;
     justify-content: center;
+
     h1 {
       height: 100%;
       top: 10%
     }
+
     .space-invaders {
       @include project-tile(30%);
       align-self: flex-end
     }
+
     .woozu-sounds {
       @include project-tile(40%)
     }
+
     .atmos {
       @include project-tile(50%);
     }
-    .moms-spaghetti{
+
+    .moms-spaghetti {
       @include project-tile(30%);
       margin: 5px 8% 5px 3%;
-  
+
     }
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .projects{
+  .projects {
 
-    .project-display{
+    .project-display {
       width: 100%;
       flex-direction: column;
+
       .atmos {
         @include project-tile(80vw);
       }
+
       .space-invaders {
         @include project-tile(70vw);
         align-self: flex-end
       }
-      .moms-spaghetti{
+
+      .moms-spaghetti {
         @include project-tile(70vw);
         margin: 5px 8% 5px 3%;
       }
+
       .woozu-sounds {
         @include project-tile(80vw);
         align-self: flex-end;
-        .tech{
+
+        .tech {
           height: 80%;
         }
       }
     }
   }
-  } 
+}

@@ -9,6 +9,8 @@ export const ProjectData = [
     description: 'An experimental app for creating and experiencing atmosphere. Users pair an image and audio together to create the feeling of an atmosphere, whether real or imagined. They can view other atmospheres and also play with the audio using custom-built audio processing software.',
     gif: atmos,
     tech: ['Django','PostgreSQL','React','Python'],
+    website: 'https://atm0s.herokuapp.com/',
+    readme: '',
     id: 4,
   },
   {
@@ -16,6 +18,8 @@ export const ProjectData = [
     description: 'My version of the classic arcade game, made with my own characters and music! ',
     gif: spaceInvaders,
     tech: ['JavaScipt','CSS'],
+    website: 'https://woozu.herokuapp.com/',
+    readme: '',
     id: 1,
   },
   {
@@ -23,6 +27,8 @@ export const ProjectData = [
     description: 'A widget for finding rhyming words. The user can put in there own word or have one randomly generated.',
     gif: momsSpag,
     tech: ['JavaScript','API', 'React'],
+    website: 'https://spaghettimom.netlify.app/',
+    readme: '',
     id: 2,
   },
   {
@@ -30,6 +36,8 @@ export const ProjectData = [
     description: 'The website for a fictional festival in a nearby galaxy. Users can see the line-up comment, like, and register their attendance.',
     gif: woozu,
     tech: ['MongoDB','SASS','MERN Stack'],
+    website: 'https://besb0x.github.io/PROJECT-1/',
+    readme: '',
     id: 3,
   }
 ]

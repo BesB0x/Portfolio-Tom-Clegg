@@ -1,8 +1,9 @@
-.skills-container{
+.skills-container {
   font-size: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   .skills {
     background-image: url('../../assets/skills-box.png');
     background-position: center;
@@ -12,37 +13,48 @@
     flex-wrap: nowrap;
     width: 85vw;
     height: 80vh;
+
     div {
       margin-top: 10%;
     }
-    .back-end{
+
+    .back-end {
       margin-left: 3%;
     }
+
     h3 {
       width: 100%;
       margin: 30px 0 0 30px;
       height: 5%;
     }
-    h5 {
+
+    h6 {
       margin-left: 30px;
       font-size: 25px;
     }
   }
-  .career-history{
+
+  .career-history {
     width: 60vw;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    .career-display{
+
+    .career-display {
       display: flex;
       flex-direction: row;
-      .career-side-bar{
+
+      .career-side-bar {
         height: 100vh;
         width: 25vw;
-        background-image: url('../../assets/career-side-bar.png');
+        animation: career 20s infinite;
+        background-image: url('../../assets/career-bar-two.png');
+        margin-top: 18px;
         background-size: cover;
         background-position: center;
       }
     }
   }
+
+
 }

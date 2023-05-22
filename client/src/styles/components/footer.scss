@@ -1,0 +1,39 @@
+
+.footer{
+  margin-top: 100px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(194, 247, 247, 0.392);
+  p {
+    margin: 5px 0 3px 0;
+  }
+  .contact-buttons-footer{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+      background-color: transparent;
+      margin: 0 2vw ;
+      height: 30px;
+      width: 30px;
+      border: none;
+      border-radius: 5px
+    }
+    .linked-in{
+      @include bg('../../assets/linked-in.png');
+    }
+    .email{
+      @include bg('../../assets/email.png')
+    }
+    .github{
+      @include bg('../../assets/github.png')
+    }
+    .bandcamp{
+      @include bg('../../assets/bandcamp.png');
+    }
+  }
+}

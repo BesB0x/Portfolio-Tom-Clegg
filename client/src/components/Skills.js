@@ -5,7 +5,7 @@ const Skills = () => {
     <main className='skills-container'>
       <div className='skills'>
         <div className='back-end'>
-          <h5> Back-End</h5>
+          <h6> Back-End</h6>
           <ul>
             <li>Python</li>
             <li>Django</li>
@@ -18,7 +18,7 @@ const Skills = () => {
           </ul>
         </div>
         <div>
-          <h5> Front-End</h5>
+          <h6> Front-End</h6>
           <ul>
             <li>HTML5</li>
             <li>JavaScipt</li>
@@ -31,7 +31,7 @@ const Skills = () => {
           </ul>
         </div>
         <div>
-          <h5> Storage/Version-Control</h5>
+          <h6> Storage/Version-Control</h6>
           <ul>
             <li>GitHub</li>
             <li>Git</li>
@@ -39,7 +39,7 @@ const Skills = () => {
           </ul>
         </div>
         <div>
-          <h5> Sound</h5>
+          <h6> Sound</h6>
           <ul>
             <li>Ableton Live</li>
             <li>Max For Live (Beginner)</li>
@@ -55,7 +55,7 @@ const Skills = () => {
           </ul>
         </div>
         <div>
-          <h5> Additional</h5>
+          <h6> Additional</h6>
           <ul>
             <li>Communication</li>
             <li>Creative Writing</li>

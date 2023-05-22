@@ -7,7 +7,7 @@ export const CareerData = [
   {
     name: 'The Elderfield',
     date: 'January - December 2022',
-    description: ['Gained strong communication skills through dealing with difficult clients at late hours, as well as the tense work politics tied to working in a struggling pub!'],
+    description: ['Gained strong communication skills through dealing with difficult clients at late hours, as well as the tense work politics tied to working in hospitality!'],
   },
   {
     name: 'High Society',
@@ -22,6 +22,6 @@ export const CareerData = [
   {
     name: 'Opus Corporate Finance',
     date: 'July-October 2021',
-    description: ['Worked in the sustainability department', '​​Provided market mapping and extensive research of companies looking to aid people in lower economic countries find clean energy sources.'],
+    description: ['Worked in the sustainability department', '​​Provided market mapping and extensive research of companies looking to aid people in lower economic countries find clean energy sources.','Assisted partners in putting together stacks to present to clients, which required very strong attention to detail and communication.'],
   }
 ]
