@@ -11,7 +11,7 @@
     width: 40%;
     display: flex;
     flex-direction: row;
-    
+
     .landing-image {
       @include bg('../../assets/potential.png');
       border-radius: 5px;
@@ -21,16 +21,19 @@
       animation: appear 2s ease forwards;
       animation-delay: 2s;
     }
+
     p {
       opacity: 0;
     }
+
     .hi {
       animation: appear 3s ease forwards;
-      margin-left:1% ;
+      margin-left: 1%;
     }
-    .welcome{
+
+    .welcome {
       animation: appear 3s ease forwards;
-      animation-delay: 4s ;
+      animation-delay: 4s;
       display: flex;
       align-items: center;
     }
@@ -53,7 +56,7 @@
       height: 110%;
       opacity: 0;
       animation: appear 2s ease forwards;
-      animation-delay: 5.5s ;
+      animation-delay: 5.5s;
     }
 
 
@@ -67,31 +70,32 @@
       animation: appear 4.5s ease forwards;
       animation-delay: 6s;
     }
-    
+
 
     .buttons {
       position: absolute;
 
       .about {
-        @include landing-buttons( 363px, -175px, 2s, 7s);
+        @include landing-buttons(363px, -175px, 2s, 7s);
         width: 65px;
         @include bg('../../assets/petal.png');
       }
 
       .projects {
-        @include landing-buttons( 328px, 74px, 1s, 7s);
+        @include landing-buttons(328px, 74px, 1s, 7s);
         @include bg('../../assets/petal-one.png');
       }
 
       .skills {
-        @include landing-buttons( 166px, -150px, 1.5s, 7s);
+        @include landing-buttons(166px, -150px, 1.5s, 7s);
         @include bg('../../assets/petal-two.png');
         width: 90px;
 
       }
-      .archive{
+
+      .archive {
         @include bg('../../assets/petal-three.png');
-        @include landing-buttons( 202px, 80px, 2.5s, 7s);
+        @include landing-buttons(202px, 80px, 2.5s, 7s);
       }
     }
   }
@@ -99,9 +103,96 @@
 
 @keyframes appear {
   0% {
-    opacity: 0; /* Start with opacity 0 */
+    opacity: 0;
+
   }
+
   100% {
-    opacity: 1; /* End with opacity 1 */
+    opacity: 1;
+
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .landing-container {
+    flex-direction: column;
+    .photo{
+      width: 100%;
+      .welcome{
+        align-items: flex-end;
+      }
+    }
+    .flower {
+      margin-top: 10%;
+      width: 100vw;
+      height: 80vh;
+
+      .fg {
+        height: 55vh;
+        width: 71%;
+      }
+
+      .buttons {
+
+        .about {
+          bottom: 12rem;
+          left: -7.5rem;
+        }
+
+        .projects {
+          bottom: 11rem;
+          left: 2rem;
+        }
+
+        .skills {
+          bottom: 5rem;
+          left: -7rem;
+        }
+
+        .archive {
+          bottom: 6.5rem;
+          left: 3rem;
+        }
+      }
+    }
+  }
+  .footer{
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+  .landing-container{
+    .photo{
+      height: 50vh;
+      margin-bottom: 0;
+    }
+    .flower{
+      margin-top: 0;
+      .fg{
+        width: 60%;
+      }
+      .bg{
+        height: 60vh;
+      }
+      .buttons{
+        .projects{
+          bottom: 17rem;
+          left: 4rem
+        }
+        .about{
+          bottom: 19rem;
+          left: -9rem;
+        }
+        .archive{
+          bottom: 10rem;
+          left: 4rem;
+        }
+        .skills{
+          bottom: 8rem;
+        }
+      }
+
+    }
   }
 }

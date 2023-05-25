@@ -55,5 +55,10 @@
   .container{
     background-repeat: no-repeat;
     font-size: 10px;
+    .navbar-brand{
+      width: 11vw;
+      height: 6.5vh;
+      background-size: cover;
+    }
   }
 }

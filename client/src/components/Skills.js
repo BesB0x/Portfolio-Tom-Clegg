@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <main className='skills-container'>
       <div className='skills'>
-        <div className='back-end'>
+        <div className='back-end skill-segment'>
           <h6> Back-End</h6>
           <ul>
             <li>Python</li>
@@ -17,7 +17,7 @@ const Skills = () => {
             <li>Insomnia</li>
           </ul>
         </div>
-        <div>
+        <div className=' front-end skill-segment'>
           <h6> Front-End</h6>
           <ul>
             <li>HTML5</li>
@@ -30,7 +30,7 @@ const Skills = () => {
             <li>Axios</li>
           </ul>
         </div>
-        <div>
+        <div className=' storage skill-segment'>
           <h6> Storage/Version-Control</h6>
           <ul>
             <li>GitHub</li>
@@ -38,7 +38,7 @@ const Skills = () => {
             <li>Heroku</li>
           </ul>
         </div>
-        <div>
+        <div className=' sound skill-segment'>
           <h6> Sound</h6>
           <ul>
             <li>Ableton Live</li>
@@ -54,9 +54,9 @@ const Skills = () => {
             <li>Sequencing</li>
           </ul>
         </div>
-        <div>
+        <div className='additional skill-segment'>
           <h6> Additional</h6>
-          <ul>
+          <ul className='list'>
             <li>Communication</li>
             <li>Creative Writing</li>
             <li>Performance</li>
@@ -74,7 +74,7 @@ const Skills = () => {
           <div>
             {CareerData.map((job, i) => {
               return (
-                <div key={i}>
+                <div className= {`job ${job.class}`} key={i}>
                   <h4> {job.name} - {job.date}</h4>
                   <ul>
                     {job.description.map((point, i) => {

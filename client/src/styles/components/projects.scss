@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
 
-  .bg {
+  .bg-projects {
     min-height: 1080px;
     width: 100vw;
     background-image: url('../../assets/ten.png');
@@ -48,13 +48,17 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .projects {
-
+@media only screen and (max-width: 500px) {
+  .projects-page {
+    height: 100%;
+    .bg-projects{
+      min-height: 1780px;
+      width: 100vw;
+      background-size: auto;
+    }
     .project-display {
       width: 100%;
       flex-direction: column;
-
       .atmos {
         @include project-tile(80vw);
       }
@@ -80,3 +84,70 @@
     }
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .bg-projects{
+    min-height: 2000px;
+  }
+  .projects-page {
+    height: 100%;
+    .bg-projects{
+      min-height: 1780px;
+      width: 100vw;
+    }
+    .project-display {
+      width: 100%;
+      flex-direction: column;
+      .atmos {
+        @include project-tile(80vw);
+      }
+
+      .space-invaders {
+        @include project-tile(70vw);
+        align-self: flex-end
+      }
+
+      .moms-spaghetti {
+        @include project-tile(70vw);
+        margin: 5px 8% 5px 3%;
+      }
+
+      .woozu-sounds {
+        @include project-tile(80vw);
+        align-self: flex-end;
+
+        .tech {
+          height: 80%;
+        }
+      }
+    }
+  }
+  }
+
+  @media only screen and (max-width: 1200px) and (min-width: 800px) {
+    .projects-page{
+
+      .project-display {
+        width: 100%;
+        .atmos {
+          @include project-tile(55vw);
+        }
+  
+        .space-invaders {
+          @include project-tile(35vw);
+          align-self: flex-end
+        }
+  
+        .moms-spaghetti {
+          @include project-tile(55vw);
+
+        }
+  
+        .woozu-sounds {
+          @include project-tile(35vw);
+          align-self: flex-end;
+  
+        }
+      }
+    }
+  }
