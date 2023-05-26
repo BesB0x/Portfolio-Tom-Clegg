@@ -1,3 +1,4 @@
+
 {
   "env": {
     "browser": true,
@@ -20,6 +21,8 @@
       "jsx": true
     }
   },
+  "root": true, // Add this line
+  
   "rules": {
     "brace-style": "error",
     "camelcase": [
