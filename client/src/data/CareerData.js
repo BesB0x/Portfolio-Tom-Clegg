@@ -2,7 +2,7 @@ export const CareerData = [
   {
     name: 'General Assembly',
     date: 'February-April 2023',
-    description: ['A remote coding bootcamp which taught me the fundamentals of full-stack web development. With daily standups, labs, pair-coding exercises and group and solo projects, I built up a portfolio showcasing skills in HTML, CSS, JavaScript, React, Node.js, Python, and more.'],
+    description: ['A remote coding bootcamp which taught me the fundamentals of full-stack web development. With daily standups, labs, pair-coding exercises and group and solo projects, I built up a portfolio showcasing skills in HTML, CSS, JavaScript, React, Node.js, Python, and more'],
     class: 'ga',
   },
   {
@@ -20,13 +20,13 @@ export const CareerData = [
   {
     name: 'Hay Designs/The Gardenists',
     date: 'March-July 2022',
-    description: ['Hay Designs is a luxury garden design and maintenance company and The Gardenists is its sister garden construction company. I was office manager at Hay Designs for half the week and then worked in maintenance and construction when I could.'],
+    description: ['Hay Designs is a luxury garden design and maintenance company and The Gardenists is its sister garden construction company. I was office manager at Hay Designs for half the week and then worked in maintenance and construction when I could'],
     class: 'hay',
   },
   {
     name: 'Opus Corporate Finance',
     date: 'July-October 2021',
-    description: ['Worked in the sustainability department', '​​Provided market mapping and extensive research of companies looking to aid people in lower economic countries find clean energy sources.','Assisted partners in putting together stacks to present to clients, which required very strong attention to detail and communication.'],
+    description: ['Worked in the sustainability department', '​​Provided market mapping and extensive research of companies looking to aid people in lower economic countries find clean energy sources','Assisted partners in putting together stacks to present to clients, which required very strong attention to detail and communication'],
     class: 'opus',
   }
 ]

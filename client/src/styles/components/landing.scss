@@ -24,6 +24,7 @@
 
     p {
       opacity: 0;
+      font-size: 17px;
     }
 
     .hi {
@@ -113,6 +114,8 @@
   }
 }
 
+
+
 @media only screen and (max-width: 900px) {
   .landing-container {
     flex-direction: column;
@@ -161,7 +164,7 @@
   }
 }
 
-@media only screen and (max-width: 900px) and (min-width: 600px) {
+@media only screen and (max-width: 900px) and (min-width: 350px) {
   .landing-container{
     .photo{
       height: 50vh;
@@ -169,13 +172,17 @@
     }
     .flower{
       margin-top: 0;
+      max-height:600px;
       .fg{
-        width: 60%;
+        width: 50%;
       }
       .bg{
         height: 60vh;
       }
       .buttons{
+        button{
+          color: black;
+        }
         .projects{
           bottom: 17rem;
           left: 4rem
@@ -194,5 +201,28 @@
       }
 
     }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .landing-container{
+
+    .photo{
+      height: 35vh;
+      width: 100%;
+    }
+    .flower{
+      .fg{
+        height: 80vh;
+        width: 100vw;
+      }
+      bg{
+        height: 50px;
+      }
+      
+    }
+  }
+  .footer{
+    height: 10vh;
   }
 }

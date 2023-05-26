@@ -18,10 +18,10 @@ const Landing = () => {
         <div className='bg'></div>
         <div className='fg'></div>
         <div className='buttons'>
-          <button className='about' onClick={handleNavigate} value='about'> About </button>
-          <button className='projects' onClick={handleNavigate} value='projects'> Projects</button>
-          <button className='skills' onClick={handleNavigate} value='skills'> Skills & Experience</button>
-          <button className='archive' onClick={handleNavigate} value='archive'> Archive</button>
+          <button className=' petal-button about' onClick={handleNavigate} value='about'> About </button>
+          <button className='petal-button projects' onClick={handleNavigate} value='projects'> Projects</button>
+          <button className='petal-button skills' onClick={handleNavigate} value='skills'> Skills & Experience</button>
+          <button className='petal-button archive' onClick={handleNavigate} value='archive'> Archive</button>
         </div>
       </section>
     </main>

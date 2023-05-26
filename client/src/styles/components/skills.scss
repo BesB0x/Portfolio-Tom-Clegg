@@ -12,7 +12,7 @@
     border-radius: 10px;
     border: 8px solid rgba(45, 186, 45, 0.305);
     flex-wrap: nowrap;
-    width: 85vw;
+    width: 95vw;
     height: 80vh;
     margin-top: 50px;
     .skill-segment{
@@ -141,6 +141,15 @@
   }
 }
 
+@media only screen and (max-width: 599px) {
+  .skills-container{
+    .skills{
+      margin-bottom: 1500px;
+    }
+
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .sound{
     height: 100vh;
@@ -163,6 +172,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
+      
 
       .skill-segment {
         width: 45%;
@@ -174,6 +184,7 @@
 @media only screen and (max-width: 1100px){
   .skills-container{
     .skills{
+      border: none;
       .skill-segment{
         background-size: cover;
         display: flex;

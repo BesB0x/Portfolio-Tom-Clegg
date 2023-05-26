@@ -24,7 +24,7 @@ export const ProjectData = [
   },
   {
     name: 'Mom\'s Spaghetti',
-    description: 'A widget for finding rhyming words. The user can put in there own word or have one randomly generated.',
+    description: 'A widget for finding rhyming words. The user can put in there own word or have one randomly generated. Completed with one other, I was in charge of consuming the rhyming API and the UI',
     gif: momsSpag,
     tech: ['JavaScript','API', 'React'],
     website: 'https://spaghettimom.netlify.app/',
@@ -33,7 +33,7 @@ export const ProjectData = [
   },
   {
     name: 'WOOZU SOUNDS',
-    description: 'The website for a fictional festival in a nearby galaxy. Users can see the line-up comment, like, and register their attendance.',
+    description: 'The website for a fictional festival in a nearby galaxy. Users can see the line-up comment, like, and register their attendance. Completed in a group of three, I focussed on functionality of the comments section, manipulating and displaying data in the profile page, and drove the UI.',
     gif: woozu,
     tech: ['MongoDB','SASS','MERN Stack'],
     website: 'https://woozu.herokuapp.com/',

@@ -79,6 +79,10 @@
   .text{
     width: 50%;
   }
+  span{
+    color: rgb(49, 171, 49);
+    font-weight: 500;
+  }
   .brand-statement{
     @include about-bg;
     animation: brandTransition 25s infinite;
@@ -189,6 +193,7 @@
       .text {
         width: 80vw;
       }
+
       }
   }
   }
