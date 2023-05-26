@@ -72,7 +72,7 @@
         @include bg('../../assets/github.png')
       }
       .bandcamp{
-        @include bg('../../assets/bandcamp-image.png');
+        @include bg('../assets/bandcamp-image.png');
         height: 38px;
       }
     }
