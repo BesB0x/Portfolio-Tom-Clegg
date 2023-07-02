@@ -6,7 +6,8 @@ import momsSpag from '../assets/moms-spag.gif'
 export const ProjectData = [
   {
     name: 'Atmos',
-    description: 'An experimental app for creating and experiencing atmosphere. Users pair an image and audio together to create the feeling of an atmosphere, whether real or imagined. They can view other atmospheres and also play with the audio using custom-built audio processing software.',
+    status: 'Not Yet Mobile Responsive',
+    description: 'An experimental app for creating and experiencing atmosphere. Users pair an image and audio together to create the feeling of an atmosphere, whether real or imagined. They can view other atmospheres and also play with the audio using custom-built audio processing software',
     gif: atmos,
     tech: ['Django','PostgreSQL','React','Python'],
     website: 'https://atm0s.herokuapp.com/',
@@ -33,7 +34,7 @@ export const ProjectData = [
   },
   {
     name: 'WOOZU SOUNDS',
-    description: 'The website for a fictional festival in a nearby galaxy. Users can see the line-up comment, like, and register their attendance. Completed in a group of three, I focussed on functionality of the comments section, manipulating and displaying data in the profile page, and drove the UI.',
+    description: 'The website for a fictional festival in a nearby galaxy. Users can see the line-up comment, like, and register their attendance. Completed in a group of three, I focussed on functionality of the comments section, manipulating and displaying data in the profile page, and drove the UI',
     gif: woozu,
     tech: ['MongoDB','SASS','MERN Stack'],
     website: 'https://woozu.herokuapp.com/',

@@ -19,6 +19,7 @@ const Projects = () => {
                 </div>
                 <div>
                   <h3> {project.name} </h3>
+                  {project.status && <p id='atmos-status' className='status'> {project.status} </p>}
                   <p> {project.description}</p>
                 </div>
               </div>

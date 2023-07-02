@@ -38,6 +38,16 @@
 
     .atmos {
       @include project-tile(50%);
+      #atmos-status {
+        color: rgb(245, 52, 52);
+        margin: 0;
+      }
+      h3 {
+        margin-bottom: 10px;
+      }
+      p{
+        margin-top: 10px
+      }
     }
 
     .moms-spaghetti {
@@ -131,6 +141,8 @@
         width: 100%;
         .atmos {
           @include project-tile(55vw);
+
+          
         }
   
         .space-invaders {
@@ -151,3 +163,11 @@
       }
     }
   }
+
+  // Status Font
+
+  .status{
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+  }
+
