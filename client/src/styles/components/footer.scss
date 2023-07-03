@@ -24,16 +24,16 @@
       border-radius: 5px
     }
     .linked-in{
-      @include bg('../../assets/linked-in.png');
+      @include bg('../../assets/linked-in.webp');
     }
     .email{
-      @include bg('../../assets/email.png');
+      @include bg('../../assets/email.webp');
     }
     .github{
-      @include bg('../../assets/github.png');
+      @include bg('../../assets/github.webp');
     }
     .bandcamp{
-      @include bg('../assets/bandcamp-image.png');
+      @include bg('../assets/bandcamp-image.webp');
     }
   }
 }

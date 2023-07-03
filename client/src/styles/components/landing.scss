@@ -13,7 +13,7 @@
     flex-direction: row;
 
     .landing-image {
-      @include bg('../../assets/potential.png');
+      @include bg('../../assets/potential.webp');
       border-radius: 5px;
       height: 100%;
       width: 50%;
@@ -50,7 +50,7 @@
     margin-right: 5%;
 
     .bg {
-      @include bg('../../assets/flower-bg.png');
+      @include bg('../../assets/flower-bg.webp');
       height: 100%;
       transform: rotateY(180deg);
       width: 90%;
@@ -62,7 +62,7 @@
 
 
     .fg {
-      @include bg('../../assets/flower-fg.png');
+      @include bg('../../assets/flower-fg.webp');
       position: absolute;
       background-position: bottom;
       height: 90%;
@@ -79,23 +79,23 @@
       .about {
         @include landing-buttons(363px, -175px, 2s, 7s);
         width: 65px;
-        @include bg('../../assets/petal.png');
+        @include bg('../../assets/petal.webp');
       }
 
       .projects {
         @include landing-buttons(328px, 74px, 1s, 7s);
-        @include bg('../../assets/petal-one.png');
+        @include bg('../../assets/petal-one.webp');
       }
 
       .skills {
         @include landing-buttons(166px, -150px, 1.5s, 7s);
-        @include bg('../../assets/petal-two.png');
+        @include bg('../../assets/petal-two.webp');
         width: 90px;
 
       }
 
       .archive {
-        @include bg('../../assets/petal-three.png');
+        @include bg('../../assets/petal-three.webp');
         @include landing-buttons(202px, 80px, 2.5s, 7s);
       }
     }

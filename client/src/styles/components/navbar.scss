@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-image: url('../../assets/navbar.png');
+  background-image: url('../../assets/navbar.webp');
   background-position: center;
   background-size: cover;
   // height: 15%;
 
   .navbar-brand{
-    background-image: url('../../assets/smile.png');
+    background-image: url('../../assets/smile.webp');
     width: 9vw;
     height: 7.5vh;
     margin-left: 10px;
@@ -37,15 +37,15 @@
       }
     }
     .projects-nav{
-      @include bg('../../assets/blob-one.png');
+      @include bg('../../assets/blob-one.webp');
 
     }
     .about-nav{
-      @include bg('../../assets/blob-two.png');
+      @include bg('../../assets/blob-two.webp');
 
     }
     .skills-nav{
-      @include bg('../../assets/blob-three.png');
+      @include bg('../../assets/blob-three.webp');
       text-align: center
     }
   }

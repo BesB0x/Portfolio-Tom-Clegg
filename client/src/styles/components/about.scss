@@ -4,14 +4,14 @@
   align-items: center;
   flex-direction: column;
   .about-title{
-    @include title('../../assets/about-two.png');
+    @include title('../../assets/about-two.webp');
     margin: 5% 0 7% 0 ;
   }
   .interests-title{
-    @include title('../../assets/excites-one.png');
+    @include title('../../assets/excites-one.webp');
   }
   .proud-title {
-    @include title('../../assets/proud-three.png');
+    @include title('../../assets/proud-three.webp');
   }
   .travel{
     margin-bottom: 10%;
@@ -63,16 +63,16 @@
         border-radius: 5px
       }
       .linked-in{
-        @include bg('../../assets/linked-in.png');
+        @include bg('../../assets/linked-in.webp');
       }
       .email{
-        @include bg('../../assets/email.png')
+        @include bg('../../assets/email.webp')
       }
       .github{
-        @include bg('../../assets/github.png')
+        @include bg('../../assets/github.webp')
       }
       .bandcamp{
-        @include bg('../assets/bandcamp-image.png');
+        @include bg('../assets/bandcamp-image.webp');
         height: 38px;
       }
     }
@@ -111,46 +111,46 @@
 
 @keyframes brandTransition {
   0% {
-    background-image: url('../../assets/about-one.png');
+    background-image: url('../../assets/about-one.webp');
   }
   33% {
-    background-image: url('../../assets/about-two.png');
+    background-image: url('../../assets/about-two.webp');
   }
   66% {
-    background-image: url('../../assets/about-three.png');
+    background-image: url('../../assets/about-three.webp');
   }
   100% {
-    background-image: url('../../assets/about-one.png');
+    background-image: url('../../assets/about-one.webp');
   }
 }
 @keyframes interestsTransition {
   0% {
-    background-image: url('../../assets/excites-one.png');
+    background-image: url('../../assets/excites-one.webp');
   }
   33% {
-    background-image: url('../../assets/excites-two.png');
+    background-image: url('../../assets/excites-two.webp');
   }
   66% {
-    background-image: url('../../assets/excites-three.png');
+    background-image: url('../../assets/excites-three.webp');
   }
 
   100% {
-    background-image: url('../../assets/excites-one.png');
+    background-image: url('../../assets/excites-one.webp');
   }
 }
 @keyframes proudOfTransition {
   0% {
-    background-image: url('../../assets/proud-one.png');
+    background-image: url('../../assets/proud-one.webp');
   }
   33% {
-    background-image: url('../../assets/proud-two.png');
+    background-image: url('../../assets/proud-two.webp');
   }
   66% {
-    background-image: url('../../assets/proud-three.png');
+    background-image: url('../../assets/proud-three.webp');
   }
 
   100% {
-    background-image: url('../../assets/proud-one.png');
+    background-image: url('../../assets/proud-one.webp');
   }
 }
 

@@ -5,7 +5,7 @@
   align-items: center;
 
   .skills {
-    // background-image: url('../../assets/skills-box.png');
+    // background-image: url('../../assets/skills-box.webp');
     background-position: center;
     background-size: cover;
     display: flex;
@@ -19,19 +19,19 @@
       margin: 0 5px
     }
     .back-end{
-      @include bg('../../assets/back-end.png');
+      @include bg('../../assets/back-end.webp');
     }
     .front-end{
-      @include bg('../../assets/front-end.png');
+      @include bg('../../assets/front-end.webp');
     }
     .storage{
-      @include bg('../../assets/storage.png');
+      @include bg('../../assets/storage.webp');
     }
     .sound{
-      @include bg('../../assets/sound.png');
+      @include bg('../../assets/sound.webp');
     }
     .additional{
-      @include bg('../../assets/additional.png');
+      @include bg('../../assets/additional.webp');
     }
     div {
       margin-top: 10%;
@@ -71,7 +71,7 @@
         height: 100vh;
         width: 25vw;
         animation: career 20s infinite;
-        background-image: url('../../assets/career-bar-two.png');
+        background-image: url('../../assets/career-bar-two.webp');
         margin-top: 18px;
         background-size: cover;
         background-position: center;
