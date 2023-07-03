@@ -22,7 +22,7 @@ const About = () => {
         <section className='block '>
           <div className='brand-statement image'></div>
           <div className='text'>
-            <h6 className='about-subtitle'> Generally Speaking </h6>
+            <h6 className='about-subtitle'> It Fits </h6>
             <p> As a musician, I am fascinated by patterns; how they move, how we use them to solve problems, and how intrinsically beautiful they are. This is as much the case for musical patterns as it is for mathematical, and through my education and personal passion I have been able to explore and enjoy both. What drew me to coding was that it finds a balance here, giving space for the analytic and creative minds to naturally coalesce. </p>
             <h6 className='about-subtitle'> How it started</h6>
             <p> I started thinking about coding at university while studying both philosophical logic and continental philosophy, and allowed the thought to grow while I pursued my desire to be a musician after university. When I saw that I wanted a career that wasn’t so purely creative, and that my music was moving ever more into a world where coding presents infinite creative possibility, it was a natural decision to enrol in General Assembly’s SEI bootcamp.</p>
